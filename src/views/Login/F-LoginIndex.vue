@@ -44,7 +44,7 @@ const userStore = useUserStore()
 
 // 登录
 const login = async () => {
-    // 饿了么表单封装的校验函数
+    // 表单封装的校验函数
     await form.value.validate()
     loading.value = true
     await axios.post('https://api.jqrjq.cn/api/mobile/elogin', fromModel.value)
